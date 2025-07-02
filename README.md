@@ -49,15 +49,24 @@ A modern, secure, and responsive full-stack web app for managing your favorite m
 . MongoDB with Mongoose
 . JWT Authentication
 
-## 📂 Folder Structure
-movie-watchlist/
-│
+## Folder Structure for Frontend 
+
+movie-watchlist/client
 ├── src/
-│ ├── components/ # Reusable components (Navbar, MovieCard, etc.)
+│ ├── components/ # Reusable components (Navbar, MovieCard)
 │ ├── contexts/ # AuthContext for global authentication state
-│ ├── pages/ # Main app pages (Login, Register, Dashboard, etc.)
+│ ├── pages/ # Main app pages (Login, Register, Dashboard)
 │ ├── services/ # API service layer using Axios
 │ ├── App.jsx # Main App component with routing
 │ ├── main.jsx # Entry point
 │ └── index.css # Global styles (Tailwind)
+
+## Folder Structure for Backend
+movie-watchlist/server 
+│ ├── config/ # Databse Configuration (db.js)
+│ ├── controllers/ # Authntication & Movie Controllers (authController.js, movieController.js)
+│ ├── middleware/ # (authMiddleware.js)
+│ ├── models/ # USer and Movie Models (User.js, Movie.js)
+│ ├── routes / # Routing url for Auth and Movies (authRoutes.js, movieRoutes.js)
+
 
